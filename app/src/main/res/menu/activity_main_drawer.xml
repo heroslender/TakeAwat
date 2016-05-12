@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_ementa"
+            android:icon="@drawable/ic_calendar"
+            android:title="ementa" />
+        <item
+            android:id="@+id/nav_pedir"
+            android:icon="@drawable/ic_user"
+            android:title="Efetuar pedido" />
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_user"
+            android:title="Pedidos pendentes" />
+        <item
+            android:id="@+id/nav_acc"
+            android:icon="@drawable/ic_user"
+            android:title="Informações da conta" />
+        <item
+            android:id="@+id/nav_defenicoes"
+            android:icon="@drawable/ic_action_new"
+            android:title="Defenições" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="Logout" />
+    </group>
+</menu>

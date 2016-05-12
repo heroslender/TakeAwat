@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Atualizações">
+        <CheckBoxPreference
+            android:key="CheckUpdate"
+            android:title="Verificar atualizações"
+            android:summary="Verificar automaticamente atualizações mesmo que a aplicação esteja fechada." />
+        <CheckBoxPreference
+            android:key="AutoUpdate"
+            android:dependency="CheckUpdate"
+            android:title="Download de atualizações"
+            android:summary="Fazer download automatico de atualizações."/>
+    </PreferenceCategory>
+</PreferenceScreen>

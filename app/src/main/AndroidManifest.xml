@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.netne.kitlfre.takeawat">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".inicial"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ementa"
+            android:label="Ementa"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".defenicoes"
+            android:label="Defenições"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".pedir"
+            android:label="@string/pedir"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".pedir_info"
+            android:label="@string/pedir"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".pedir">
+        </activity>
+        <receiver android:process=":remote" android:name=".testes"></receiver>
+        <service
+            android:name=".BackgroudService"
+            android:enabled="true"
+            android:process=":back_service" >
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_login_cod_cli"
+        android:layout_centerHorizontal="true"
+        android:hint="e-mail"
+        android:layout_above="@+id/txt_login_pass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/txt_login_pass"
+        android:hint="Palavra-chave"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/mantem_sessao" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/login"
+        android:onClick="btnLogin"
+        android:layout_below="@+id/mantem_sessao"
+        android:layout_alignLeft="@+id/txt_login_pass"
+        android:layout_alignStart="@+id/txt_login_pass"
+        android:layout_alignRight="@+id/txt_login_pass"
+        android:layout_alignEnd="@+id/txt_login_pass" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar sessão"
+        android:id="@+id/mantem_sessao"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

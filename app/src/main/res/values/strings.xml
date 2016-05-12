@@ -1,0 +1,17 @@
+<resources>
+    <string name="versao">2.2</string>
+    <string name="app_name">TakeAwat</string>
+    <string name="segunda">Segunda-Feira</string>
+    <string name="terca">Terça-Feira</string>
+    <string name="quarta">Quarta-Feira</string>
+    <string name="quinta">Quinta-Feira</string>
+    <string name="sexta">Sexta-Feira</string>
+    <string name="pedir">Efetuar pedido</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="action_remove_item">Remover item</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navdrawer_description_a11y">Navigation Drawer é utilizado para navegar pela aplicação</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
